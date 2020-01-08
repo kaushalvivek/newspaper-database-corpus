@@ -14,7 +14,9 @@ years = ['2019']
 
 url = "https://timesofindia.indiatimes.com/archive.cms"
 
-page = requests.get('https://timesofindia.indiatimes.com/archive.cms')
+page = requests.get(url)
 soup = bs(page.text, 'html.parser')
-print(soup.prettify)
+links = soup.findAll('a', {"class": "normtxt"})
+for link in links:
+  print(link['href'])
 
