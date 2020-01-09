@@ -3,10 +3,7 @@ import tweepy
 import csv
 
 #Twitter API credentials
-consumer_key = "Taqi0NslValzyd229ECI7XkvA"
-consumer_secret = "cWYAKfyjeBMQCP6dzxkaBzmRVGcj9N44rlWapoHzsxvDBzyX62"
-access_key = "1242857005-io7k3mfG1GvWUVJYORwp3jZEtAkeZ6KHOpbIkzt"
-access_secret = "zaKoB3tZ58rJLjR47qFZUx5yjttc44pqgpU98oGWPcdiZ"
+
 
 def get_all_tweets(screen_name):
 	#Twitter only allows access to a users most recent 3240 tweets with this method
